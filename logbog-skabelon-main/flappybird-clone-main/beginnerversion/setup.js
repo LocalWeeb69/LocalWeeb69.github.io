@@ -2,7 +2,7 @@
 const gameOverSound = new Audio("../assets/sounds/gameover.mp3");
 let music = new Audio("../assets/sounds/music.mp3");
       music.loop = true;
-      music.volume = 1;
+      music.volume = 0.5;
 const debugModeIsOn = false;
 const startKey = "s";
 const restartKey = "r";
@@ -46,7 +46,7 @@ const scoreTextColor = "yellow";
 let scoreValue = 0;
 
 // cloud variables
-const cloudImage = new Image(200, 200);
+let cloudImage = new Image(200, 200);
       cloudImage.src = "../assets/images/cloud.png";
 const cloudSpawnInterval = 10000; // milliseconds
 const cloudXSpeed = -.7;
@@ -108,7 +108,7 @@ let B1s = [
     },
 ];
 
-const B2image = new Image(650, 650);
+let B2image = new Image(650, 650);
       B2image.src = "../assets/images/new_building_1.png";
 const B2SpawnInterval = randomBetween(17500, 25000); // milliseconds
 const B2XSpeed = -.4;

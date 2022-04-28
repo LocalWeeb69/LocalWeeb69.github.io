@@ -29,8 +29,9 @@ document.addEventListener("keydown", function(event) {
     
     if(nicekey == 1 && event.key == testkey2){
         nicemode = 1
-        music.src = "../assets/sounds/wide.mp3";
+        music.src = "../assets/sounds/Snoop.mp3";   
         music.play();
+        music.volume = 1;
     };
 
     if(event.key == testkey){
@@ -64,6 +65,8 @@ document.addEventListener("keydown", function(event) {
         DiamondImage.src = "../assets/images/Diamond.png";
         birdImage.src = "../assets/images/bird.png";
         starimage.src = "../assets/images/star.png";
+        cloudImage.src = "../assets/images/cloud.png";
+        B2image.src = "../assets/images/new_builing_1.png"
         return; 
     }
 

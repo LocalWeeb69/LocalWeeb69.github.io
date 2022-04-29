@@ -113,13 +113,13 @@ function update() {
     // Building
     for(let B1 of B1s) {
         // draw the building
-        drawImage(
+        if(nicemode == 0){drawImage(
             B1image,
             B1.xPosition,
             B1.yPosition,
             B1image.width,
             B1image.height);
-        
+        }
         // update the x position of the building
         B1.xPosition += B1XSpeed;
         // remove building if it moves beyond the destruction point
@@ -140,13 +140,13 @@ function update() {
     // Building
     for(let B3 of B3s) {
         // draw the building
-        drawImage(
+        if(nicemode == 0){drawImage(
             B3image,
             B3.xPosition,
             B3.yPosition,
             B3image.width,
             B3image.height);
-        
+        }
         // update the x position of the building
         B3.xPosition += B3XSpeed;
         // remove building if it moves beyond the destruction point
@@ -169,13 +169,14 @@ function update() {
     // Building
     for(let B4 of B4s) {
         // draw the building
-        drawImage(
+        if(nicemode == 0){ drawImage(
             B4image,
             B4.xPosition,
             B4.yPosition,
             B4image.width,
             B4image.height);
-        
+        }
+
         // update the x position of the building
         B4.xPosition += B4XSpeed;
         // remove building if it moves beyond the destruction point
@@ -463,11 +464,13 @@ function update() {
     if(nicemode==1){
         fireballImage.src = "../assets/images/nice.png";
         moon = false;
-        backgroundimage.src = "../assets/images/memebackground.png";
-        scoreImage.src = "../assets/images/dorito.png";
+        backgroundimage.src = "../assets/images/weed.jpg";
+        scoreImage.src = "../assets/images/WeedCoin.png";
         DiamondImage.src = "../assets/images/MD.png";
-        birdImage.src = "../assets/images/pepe.png";
+        birdImage.src = "../assets/images/SnoopD.png";
         starimage.src = "../assets/images/illuminati.png";
+        cloudImage.src = "../assets/images/smoke.png";
+        B2image.src ="../assets/images/blunt.png"
     }
     
     // update timeSinceLastFrame and draw next frame

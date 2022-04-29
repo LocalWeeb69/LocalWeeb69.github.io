@@ -60,17 +60,22 @@ document.addEventListener("keydown", function(event) {
         nicekey = 0;
         nicemode = 0;
         moon=true;
-        backroundimage.src = "../assets/images/baggrund.png";
+        backgroundimage.src = "../assets/images/baggrund.png";
         scoreImage.src = "../assets/images/music_note.png";
         DiamondImage.src = "../assets/images/Diamond.png";
         birdImage.src = "../assets/images/bird.png";
         starimage.src = "../assets/images/star.png";
         cloudImage.src = "../assets/images/cloud.png";
-        B2image.src = "../assets/images/new_builing_1.png"
+        B2image.src = "../assets/images/new_building_1.png";
+        music.src = "../assets/sounds/music.mp3";
+        music.play();
+        music.volume = 0.5;
         return; 
     }
 
 });
+
+
 
 document.addEventListener("keyup", function(event) {
 
